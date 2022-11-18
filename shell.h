@@ -15,14 +15,8 @@
 #define END_OF_FILE -2
 #define EXIT -3
 
-/* Global enviroment */
-extern char **environ;
-/* Global program name */
-char *name;
-/* Global history counter */
-int hist;
-
-/** struct list_s - A new type defining linked list
+/**
+ * struct list_s - A new type defining linked list
  * @dir: a path direction
  * @next: a pointer to next struct
  */
@@ -62,7 +56,7 @@ typedef struct alias_s
 /**
  * main - header file for all prototypes
  */
-alias_t *aliases;
+
 
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);

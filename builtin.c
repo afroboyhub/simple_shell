@@ -79,9 +79,9 @@ int shellby_exit(char **args, char **front)
 /**
  * shellby_cd - changes teh current directory of the shellby process
  * @args: an array of arguments
- * @front a double pointer
+ * @front: a double pointer
  *
- * Return 2 if given string is not directory, -1 if error or 0
+ * Return: 2 if given string is not directory, -1 if error or 0
  */
 
 int shellby_cd(char **args, char __attribute__((__unused__)) **front)
